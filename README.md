@@ -1,4 +1,4 @@
 # JavaScript-patterns
-Different JavaScript examples and notation.
+##Different JavaScript examples and notation.
 
-###In JavavScript classical inherit mean inherit in classes.
+In JavavScript classical inherit mean inherit in classes.
