@@ -19,3 +19,24 @@ var object = new Child();
 
 console.log(object.wasBornParent, object.isChildClassUsed); // true true	
 
+
+// classical inherit #2
+
+
+function Parent (name) {
+	this.name = name || 'vlad';
+}
+	
+
+
+function Child () {
+	this.surname  = 'khvostov';
+	// Call parent constructor like method for this object
+	// minus: parent prototype is lost
+	Parent.apply(this, arguments)
+}
+
+var object = new Child('Alex');
+
+console.log(object) // Child {surname: "khvostov", name: "Alex"}
+
