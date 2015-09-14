@@ -18,6 +18,8 @@ inherit(Child, Parent);
 var object = new Child();
 
 console.log(object.wasBornParent, object.isChildClassUsed); // true true	
+// minus: - inherit specific parent's properties.
+// - can't uses params.
 
 
 // classical inherit #2
@@ -32,7 +34,6 @@ function Parent (name) {
 function Child () {
 	this.surname  = 'khvostov';
 	// Call parent constructor like method for this object
-	// minus: parent prototype is lost
 	Parent.apply(this, arguments)
 }
 
@@ -40,3 +41,5 @@ var object = new Child('Alex');
 
 console.log(object) // Child {surname: "khvostov", name: "Alex"}
 
+// minuses: parent prototype is lost
+// pluses: child instance get real copies their properties from parent's constructor.
