@@ -43,3 +43,27 @@ console.log(object) // Child {surname: "khvostov", name: "Alex"}
 
 // minuses: parent prototype is lost
 // pluses: child instance get real copies their properties from parent's constructor.
+
+
+// classical inherit #3 (unites two examples)
+
+function Parent (name) {
+	this.name = name || 'vlad';
+}
+
+Parent.prototype.sayHi = function() {
+	console.log('Hi ' + this.name)
+};
+
+
+function Child () {
+	Parent.apply(this, arguments)
+}
+
+Child.prototype = new Parent();
+
+var object = new Child('Alex');
+
+console.log(object.sayHi()); // Hi Alex
+
+// minuses: performance degradation
