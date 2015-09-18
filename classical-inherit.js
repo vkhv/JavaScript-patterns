@@ -77,4 +77,18 @@ function inherit(C, P){
 }
 
 // minuses: copies only prototypes.
-}
+
+
+// classical inherit # (preferred way)
+
+
+var inherit = (function(){
+	var F = functuion() {};
+	return function(C, P){
+		F.prototype = P.prototype;
+		C.prototype = new F();
+		C.uber = P.prototype;
+		C.prototype.constructor = C;
+	}
+})
+
