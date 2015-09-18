@@ -67,3 +67,14 @@ var object = new Child('Alex');
 console.log(object.sayHi()); // Hi Alex
 
 // minuses: performance degradation
+
+
+// classical inherit #4
+
+
+function inherit(C, P){
+	C.prototype = P.prototype
+}
+
+// minuses: copies only prototypes.
+}
