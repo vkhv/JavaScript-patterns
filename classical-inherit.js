@@ -1,5 +1,5 @@
 // classical inherit
-// In #JavavScript classical inherit mean inherit in classes.
+// In #JavavScript classical inherit means inherit in classes.
 
 function Parent () {
 	this.wasBornParent = true;
@@ -19,7 +19,7 @@ var object = new Child();
 
 console.log(object.wasBornParent, object.isChildClassUsed); // true true	
 // minus: - inherit specific parent's properties.
-// - can't uses params.
+// - can't use params.
 
 
 // classical inherit #2
@@ -41,8 +41,8 @@ var object = new Child('Alex');
 
 console.log(object) // Child {surname: "khvostov", name: "Alex"}
 
-// minuses: parent prototype is lost
-// pluses: child instance get real copies their properties from parent's constructor.
+// minuses: the parent prototype is lost
+// pluses: child instance gets real copies their properties from parent's constructor.
 
 
 // classical inherit #3 (unites two examples)
