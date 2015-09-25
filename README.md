@@ -3,4 +3,4 @@
 
 In JavavScript classical inherit means inherit in classes.
 
-Name space helping to reduce amount a global variables.
+Name space helps to reduce amount a global variables.
