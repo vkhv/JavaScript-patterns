@@ -1,6 +1,7 @@
 //  Function that copies objects and their properties.
 // Doesn't work with prototypes.
 
+// shallow copy
 function extend(parent, child) {
   var i;
   child = child || {};
@@ -12,6 +13,7 @@ function extend(parent, child) {
   return child;
 }
 
+// full copy
 function extendDeep(parent, child) {
   var i;
   var toStr = Object.prototype.toString;
