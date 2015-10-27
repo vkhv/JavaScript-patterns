@@ -1,0 +1,20 @@
+// That object acts a mediator.
+
+var video = {
+  makeRequest: function(){
+    proxy.makeRequest();
+  }
+}
+
+var proxy = {
+  makeRequest: function(){
+    this.caheRequst = http.makeRequest();
+    return this.caheRequest;
+  }
+}
+
+var http = {
+  makeRequest: function(){
+   return 'We have got some information using the http request'
+  }
+}
