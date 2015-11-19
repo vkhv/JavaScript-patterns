@@ -1,5 +1,6 @@
 /*
- * Observer Pattern
+ * Observer Pattern is a design pattern in which an object (known as the subject) maintains a list of objects depending on what it observes (observers),
+ * automatically notifying them of any changes to state. 
  * NOTE!: using ES6
  */
 var model = {};
