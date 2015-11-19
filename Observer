@@ -1,0 +1,12 @@
+/*
+ * Observer Pattern
+ * NOTE!: using ES6
+ */
+var model = {};
+
+Object.observe(model, function(changes) {
+  // async callback
+  changes.forEach(function(change) {
+    console.log(change.type, change.name, change.oldValue);
+  });
+});
