@@ -2,15 +2,14 @@
 // It function doesn't work with prototypes.
 
 // A shallow copy.
-function extend(parent, child) {
-  var i;
-  child = child || {};
+const extend = (parent, child = {}) {
+  const i;
   for(i in parent) {
     if(parent.hasOwnProperty(i)) {
-      child[i] = parent[i];
+      child[i] = parent[i]
     }
   }
-  return child;
+  return child
 }
 
 // A full copy.
