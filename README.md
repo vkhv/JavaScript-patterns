@@ -1,2 +1,2 @@
 # JavaScript-patterns
-## Different JavaScript examples and notation.
+Different JavaScript patterns examples.
